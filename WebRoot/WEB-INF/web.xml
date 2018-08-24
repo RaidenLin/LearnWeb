@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.Raiblue.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ImageServlet</servlet-name>
+    <servlet-class>com.Raiblue.servlet.ImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddClients</servlet-name>
+    <servlet-class>com.Raiblue.servlet.AddClients</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ClientPageServlet</servlet-name>
+    <servlet-class>com.Raiblue.servlet.ClientPageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HadoopLog</servlet-name>
+    <servlet-class>com.Raiblue.servlet.HadoopLog</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddClients</servlet-name>
+    <url-pattern>/AddClients</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClientPageServlet</servlet-name>
+    <url-pattern>/ClientPageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageServlet</servlet-name>
+    <url-pattern>/ImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HadoopLog</servlet-name>
+    <url-pattern>/HadoopLog</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
